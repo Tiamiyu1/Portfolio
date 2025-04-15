@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Abdulwasiu's Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Inter', sans-serif;
+    }
+
+    body {
+      display: flex;
+      background-color: #f8f9fa;
+      color: #212529;
+    }
+
+    aside {
+      background-color: #0a0f1a;
+      color: #fff;
+      width: 260px;
+      height: 100vh;
+      padding: 2rem 1rem;
+      position: fixed;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    aside img {
+      border-radius: 50%;
+      width: 120px;
+      height: 120px;
+      object-fit: cover;
+      margin-bottom: 1rem;
+    }
+
+    aside h2 {
+      margin-bottom: 1rem;
+      font-size: 1.25rem;
+    }
+
+    .social-icons a {
+      margin: 0 0.5rem;
+      color: white;
+      text-decoration: none;
+      font-size: 1.2rem;
+    }
+
+    nav {
+      margin-top: 2rem;
+      width: 100%;
+    }
+
+    nav a {
+      display: block;
+      padding: 0.75rem 1rem;
+      color: white;
+      text-decoration: none;
+      border-radius: 8px;
+      transition: 0.3s;
+    }
+
+    nav a:hover, nav a.active {
+      background-color: #1c2d4a;
+    }
+
+    main {
+      margin-left: 260px;
+      padding: 2rem;
+      flex: 1;
+    }
+
+    section {
+      margin-bottom: 3rem;
+    }
+
+    h1, h2 {
+      border-bottom: 2px solid #0d6efd;
+      padding-bottom: 0.25rem;
+      margin-bottom: 1rem;
+      color: #0a0f1a;
+    }
+
+    p {
+      line-height: 1.6;
+    }
+  </style>
+</head>
+<body>
+  <aside>
+    <img src="profile.jpg" alt="Profile Picture" />
+    <h2>Abdulwasiu</h2>
+    <div class="social-icons">
+      <a href="#" target="_blank">LinkedIn</a>
+      <a href="#" target="_blank">X</a>
+      <a href="#" target="_blank">GitHub</a>
+      <a href="#" target="_blank">Google</a>
+    </div>
+    <nav>
+      <a href="#about" class="active">About</a>
+      <a href="#resume">Resume</a>
+      <a href="#achievements">Achievements</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </aside>
+  <main>
+    <section id="about">
+      <h1>About</h1>
+      <p>Hello!</p>
+      <p>
+        Here’s a summary of my career and research experiences:<br>
+        I hold a research master's degree in Neuroscience and Biotechnology.<br>
+        Following my graduation, I worked as a researcher for an international research project.<br>
+        I have extensive experience in bioinformatics, particularly in the analysis of multiomics data.
+        I have developed novel tools for multiomics data analysis, including R and Python libraries, and have contributed to the development of open-source web-based tools.
+        Most of these tools are the subject of peer-reviewed publications.
+      </p>
+      <p>
+        To further enhance my expertise and expand my professional network, I have actively participated in numerous workshops, hackathons,
+        and conferences, building a strong international presence in the bioinformatics field.
+      </p>
+    </section>
+
+    <section id="resume">
+      <h2>Resume</h2>
+      <p>[Link or details to be added]</p>
+    </section>
+
+    <section id="achievements">
+      <h2>Achievements</h2>
+      <p>[Achievements to be listed]</p>
+    </section>
+
+    <section id="projects">
+      <h2>Projects</h2>
+      <p>[Project highlights, links, and details go here]</p>
+    </section>
+
+    <section id="contact">
+      <h2>Contact</h2>
+      <p>Email: abdulwasiu@example.com</p>
+    </section>
+  </main>
+</body>
+</html>
