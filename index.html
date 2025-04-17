@@ -1,151 +1,691 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Abdulwasiu's Portfolio</title>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
-  <style>
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-      font-family: 'Inter', sans-serif;
-    }
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>Abdulwasiu Tiamiyu <> Data Analyst </title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
 
-    body {
-      display: flex;
-      background-color: #f8f9fa;
-      color: #212529;
-    }
+  <!-- Favicons -->
+  <link href="assets/img/favicon.png" rel="icon">
 
-    aside {
-      background-color: #0a0f1a;
-      color: #fff;
-      width: 260px;
-      height: 100vh;
-      padding: 2rem 1rem;
-      position: fixed;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-    }
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com" rel="preconnect">
+  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
 
-    aside img {
-      border-radius: 50%;
-      width: 120px;
-      height: 120px;
-      object-fit: cover;
-      margin-bottom: 1rem;
-    }
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
 
-    aside h2 {
-      margin-bottom: 1rem;
-      font-size: 1.25rem;
-    }
+  <!-- Main CSS File -->
+  <link href="assets/css/main.css" rel="stylesheet">
 
-    .social-icons a {
-      margin: 0 0.5rem;
-      color: white;
-      text-decoration: none;
-      font-size: 1.2rem;
-    }
-
-    nav {
-      margin-top: 2rem;
-      width: 100%;
-    }
-
-    nav a {
-      display: block;
-      padding: 0.75rem 1rem;
-      color: white;
-      text-decoration: none;
-      border-radius: 8px;
-      transition: 0.3s;
-    }
-
-    nav a:hover, nav a.active {
-      background-color: #1c2d4a;
-    }
-
-    main {
-      margin-left: 260px;
-      padding: 2rem;
-      flex: 1;
-    }
-
-    section {
-      margin-bottom: 3rem;
-    }
-
-    h1, h2 {
-      border-bottom: 2px solid #0d6efd;
-      padding-bottom: 0.25rem;
-      margin-bottom: 1rem;
-      color: #0a0f1a;
-    }
-
-    p {
-      line-height: 1.6;
-    }
-  </style>
 </head>
-<body>
-  <aside>
-    <img src="profile.jpg" alt="Profile Picture" />
-    <h2>Abdulwasiu</h2>
-    <div class="social-icons">
-      <a href="#" target="_blank">LinkedIn</a>
-      <a href="#" target="_blank">X</a>
-      <a href="#" target="_blank">GitHub</a>
-      <a href="#" target="_blank">Google</a>
+
+<body class="index-page">
+
+  <header id="header" class="header dark-background d-flex flex-column">
+    <i class="header-toggle d-xl-none bi bi-list"></i>
+
+    <div class="profile-img">
+      <img src="assets/img/picture.png" alt="" class="img-fluid rounded-circle">
     </div>
-    <nav>
-      <a href="#about" class="active">About</a>
-      <a href="#resume">Resume</a>
-      <a href="#achievements">Achievements</a>
-      <a href="#projects">Projects</a>
-      <a href="#contact">Contact</a>
+
+    <a href="index.html" class="logo d-flex align-items-center justify-content-center">
+      <h1 class="sitename">Abdulwasiu Tiamiyu</h1>
+    </a>
+
+    <div class="social-links text-center">
+      <a href="https://www.linkedin.com/in/tiamiyu1/" class="linkedin"><i class="bi bi-linkedin"></i></a>
+      <a href="https://x.com/tawowas" class="twitter"><i class="bi bi-twitter-x"></i></a>
+      <a href="https://github.com/tiamiyu1" class="github"><i class="bi bi-github"></i></a> 
+      <a href="https://tiamiyu.medium.com/" class="medium"><i class="bi bi-medium"></i></a> 
+      <a href="https://www.researchgate.net/profile/Abdulwasiu-Tiamiyu-2" class="google-plus"><i class="bi bi-google"></i></a> update class
+
+    </div>
+
+    <nav id="navmenu" class="navmenu">
+      <ul>
+
+        <li><a href="#about"><i class="bi bi-person navicon"></i> About</a></li>
+        <li><a href="#resume"><i class="bi bi-file-earmark-text navicon"></i> Resume</a></li>
+        <li><a href="#achievements"><i class="bi bi-hdd-stack navicon"></i>Achievements</a></li>
+        <li class="dropdown"><a href="#portfolio"><i class="bi bi-menu-button navicon"></i> <span>Projects</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+          <ul>
+            <li><a href="#portfolio" class="filter-trigger" data-filter=".filter-bi">BI Dashboards</a></li>
+            <li><a href="#portfolio" class="filter-trigger" data-filter=".filter-python">Python</a></li>
+            <li><a href="#portfolio" class="filter-trigger" data-filter=".filter-sql">SQL</a></li>
+            <li><a href="#portfolio" class="filter-trigger" data-filter=".filter-web">Web-Based Tools</a></li>
+            <li><a href="#portfolio" class="filter-trigger" data-filter=".filter-ml">AI/ML</a></li>
+            <li><a href="#portfolio" class="filter-trigger" data-filter=".filter-sheet">Spreadsheets</a></li>
+          </ul>  
+        </li>
+        <li><a href="#blog"><i class="bi bi-journal-text navicon"></i>Blog</a></li>
+        <li><a href="#contact"><i class="bi bi-envelope navicon"></i> Contact</a></li>
+      </ul>
     </nav>
-  </aside>
-  <main>
-    <section id="about">
-      <h1>About</h1>
-      <p>Hello!</p>
-      <p>
-        Here’s a summary of my career and research experiences:<br>
-        I hold a research master's degree in Neuroscience and Biotechnology.<br>
-        Following my graduation, I worked as a researcher for an international research project.<br>
-        I have extensive experience in bioinformatics, particularly in the analysis of multiomics data.
-        I have developed novel tools for multiomics data analysis, including R and Python libraries, and have contributed to the development of open-source web-based tools.
-        Most of these tools are the subject of peer-reviewed publications.
-      </p>
-      <p>
-        To further enhance my expertise and expand my professional network, I have actively participated in numerous workshops, hackathons,
-        and conferences, building a strong international presence in the bioinformatics field.
-      </p>
-    </section>
 
-    <section id="resume">
-      <h2>Resume</h2>
-      <p>[Link or details to be added]</p>
-    </section>
+  </header>
 
-    <section id="achievements">
-      <h2>Achievements</h2>
-      <p>[Achievements to be listed]</p>
-    </section>
+  <main class="main">
 
-    <section id="projects">
-      <h2>Projects</h2>
-      <p>[Project highlights, links, and details go here]</p>
-    </section>
 
-    <section id="contact">
-      <h2>Contact</h2>
-      <p>Email: abdulwasiu@example.com</p>
-    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about section">
+
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2>About</h2>      
+        <p><em>Hi, I’m Abdulwasiu</em>
+          <br><br>
+        <!-- <p><em>Here’s a summary of my career and research experiences:</em></p>
+        <p><em>I hold a research master's degree in Neuroscience and Biotechnology.</em></p>
+        <p><em>Following my graduation, I worked as a researcher for an international research project, PRIMA PROMEDLIFE.</em></p>
+        <p><em>I have extensive experience in bioinformatics, particularly in the analysis of multiomics data. I have developed novel tools for multiomics data analysis, including R and Python libraries, and have contributed to the development of open-source web-based tools. Most of these tools are the subject of peer-reviewed publications.</em></p>
+        <p><em>To further enhance my expertise and expand my professional network, I have actively participated in numerous workshops, hackathons, and conferences, building a strong international presence in the bioinformatics field.</em></p> -->
+
+        <p align=justify>I'm a data-driven professional with over three years of experience in data analysis, business intelligence, and database management. I specialize in transforming raw data into actionable insights using tools like Python, SQL, R, Power BI, and Looker Studio. My expertise lies in data storytelling, building insightful dashboards, and reporting solutions that support business decision-making.
+            
+            <br><br>Beyond analytics, I'm also a certified Data Mentor and Tutor, having trained and guided over 500 learners in data analytics and business intelligence through platforms like Udacity and Ustacky. I enjoy simplifying complex topics and delivering engaging, hands-on learning experiences using tools like Spreadsheets, Python, SQL, and Power BI. Through curriculum development and personalized mentorship, I’ve helped many aspiring analysts transition into successful data careers.
+            <br><br>Whether it's building high-impact dashboards or mentoring the next generation of data professionals, I'm driven by the power of data to make a difference.</p>
+
+      </div><!-- End Section Title -->
+    </section><!-- /About Section -->
+
+   
+   
+    <!-- Resume Section -->
+    <section id="resume" class="resume section">
+
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Resume</h2>
+      </div><!-- End Section Title -->
+
+      <div class="container">
+
+        <div class="row">
+          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="200">
+            <h3 class="resume-title">Employment History</h3>
+            
+            <div class="resume-item">
+              <h4>Data Analyst Session Lead </h4>
+              <h5>May 2022 - Present </h5>
+              <p><em>Udacity, USA (Remote)</em></p>
+            </div><!-- Edn Resume Item -->
+
+            <div class="resume-item">
+                <h4>Data Analyst</h4>
+                <h5> Jun 2022 - Feb 2023</h5>
+                <p><em>Ingressive for Good, Nigeria</em></p>
+            </div><!-- Edn Resume Item -->
+              
+            <div class="resume-item">
+                <h4>Data Engineering Intern - Project Lead</h4>
+                <h5> Jan 2022 - Apr 2022</h5>
+                <p><em>Hamoye, Bermuda</em></p>
+            </div><!-- Edn Resume Item -->
+              
+            <div class="resume-item">
+              <h4>ML Data Analyst</h4>
+              <h5> Mar 2021 - Oct 2021</h5>
+              <p><em>Hugo Technology Inc., Nigeria</em></p>
+            </div><!-- Edn Resume Item -->
+
+
+            <h3 class="resume-title">Education</h3>
+                <div class="resume-item">
+                <h4>Master's Degree </h4>
+                <h5>2021 - 2023</h5>
+                <p><em>Mohammed VI Polytechnic University, Morocco</em></p>
+                <p>Speciality : Collective Intelligence</p>
+                </div><!-- Edn Resume Item -->
+
+                <div class="resume-item">
+                <h4>Bachelor's degree </h4>
+                <h5>2015 - 2019 </h5>
+                <p><em>Obafemi Awolowo University, Nigeria</em></p>
+                <p>Speciality : Microbiology</p>
+                </div><!-- Edn Resume Item -->
+
+          </div>
+          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
+            <h3 class="resume-title">Other Work Experience</h3>
+
+            <div class="resume-item pb-0">
+                <h4>Volunteer @ Be My Eyes</h4>
+                <h5>2022 – Present</h5>
+                <p><em>Helping blind people across the globe with their daily activities.</em></p>
+  
+            </div><!-- Edn Resume Item -->
+              
+            <div class="resume-item pb-0">
+              <h4>Code Reviewer & Mentor  @ Ustacky</h4>
+              <h5>2021 – Present</h5>
+              <p><em>Provides full-time, on-demand mentorship to data science students and also gives personalised and constructive feedback on project reviewed.</em></p>
+
+            </div><!-- Edn Resume Item -->
+            <div class="resume-item pb-0">
+              <h4>Cofounder & Technical Lead @ Edu4all Initiative </h4>
+              <h5>2022 - Present</h5>
+              <p><em>Enhance quality education through collective intelligence for resilience and a prosperous Africa.</em></p>
+
+            </div><!-- Edn Resume Item -->
+
+            <div class="resume-item pb-0">
+              <h4>2X Data Science Mentor @ KaggleX Fellowship Program</h4>
+              <h5>2022 - 2023</h5>
+              <p><em>Helping early-career data scientists develop their skills and grow in their careers.</em></p>
+              
+            </div><!-- Edn Resume Item -->
+          </div>
+
+
+        </div>
+
+      </div>
+
+    </section><!-- /Resume Section -->
+
+
+<!-- ach Section -->
+<section id="achievements" class="resume section">
+
+  <!-- Section Title -->
+  <div class="container section-title" data-aos="fade-up">
+    <h2>Achievements</h2>
+  </div><!-- End Section Title -->
+
+  <div class="container">
+
+    <div class="">
+      <div class="col-lg-12" data-aos="fade-up" data-aos-delay="200">
+       
+        <!-- start Publications-->
+        <h3 class="resume-title">Publication</h3>
+        <div class="resume-item">
+          <p><em>Pawar SV, Banini WSK, Shamsuddeen MM, Jumah TA, Dolling NNO, ,<b>Tiamiyu A</b> and Awe OI (2024). Prostruc: an open-source tool for 3D structure prediction using homology modeling. Front. Chem. 12:1509407. doi:  10.3389/fchem.2024.1509407. <a href="https://www.frontiersin.org/journals/chemistry/articles/10.3389/fchem.2024.1509407/full" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a> </em></p>
+        </div>  
+        <!-- Edn Publications-->
+
+        <!-- Conference  Item -->
+        <h3 class="resume-title">Talks & Presentations</h3>
+        <div class="resume-item">
+          <p><em>KaggleX Speaker Talk | The Data Analysis Process | Dec 28, 2022<a href="https://www.linkedin.com/posts/tiamiyu1_dataanalysis-data-connections-activity-7013946050918948864-g8-i?utm_source=share&utm_medium=member_desktop&rcm=ACoAAB0YtJQBTQsM5N-vLCHAHN9t1mBIyDcNyyo" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a></em></p>
+        </div>
+        <div class="resume-item">
+          <p><em> I4GxDataCamp Fireside Chat | Navigating Data Career | Oct 21, 2022<a href="https://x.com/Ingressive4Good/status/1583446000579928072?s=20&t=McgQMSGsTOJux2QUgqEBfQ" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a> </em></p>
+        </div>
+
+        </div>
+        <!-- Edn conference Item -->
+
+        <!-- start awards-->
+        <h3 class="resume-title">Awards</h3>
+        <div class="resume-item">
+          <p><em>Most Outstanding HDSC Stage B Data Engineering Intern, 2022 <a href="https://www.linkedin.com/posts/hamoyehq_hamoye-internship2022-buildingthefutureofwork-activity-6904754847552282624-cwmF" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a></em></p>
+        </div>
+        <div class="resume-item">
+          <p><em>Scholar Nurture Data Science Top Performer Award (2/170), 2020<a href="https://drive.google.com/file/d/1El3CMCVyNIemL7qNsYVJl7lKdlUKQ-7R/view?usp=drive_link" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a> </em></p>
+        </div>
+        <!-- Edn awards->
+
+      </div>
+      
+    </div>
+
+  </div>
+
+</section> <!-- /achievementsSection -->
+
+
+
+
+
+    <!-- Portfolio Section -->
+    <section id="portfolio" class="portfolio section light-background">
+
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Projects</h2>
+        <p></p>
+      </div><!-- End Section Title -->
+
+      <div class="container">
+
+        <div class="isotope-layout" data-default-filter="*" data-layout="masonry" data-sort="original-order">
+
+          <ul class="portfolio-filters isotope-filters" data-aos="fade-up" data-aos-delay="100">
+            <li data-filter="*" class="filter-active">All</li>
+            <li data-filter=".filter-bi">BI Dashboards</li>
+            <li data-filter=".filter-python">Python</li>
+            <li data-filter=".filter-sql">SQL</li>
+            <li data-filter=".filter-web">Web-Based Tools</li>
+            <li data-filter=".filter-ml">AI/ML</li>
+            <li data-filter=".filter-sheet">Spreadsheets</li>
+            <li data-filter=".filter-training">Training</li>
+          </ul><!-- End Portfolio Filters -->
+
+          <div class="row gy-4 isotope-container" data-aos="fade-up" data-aos-delay="200">
+
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-bi filter-sheet">
+              <div class="portfolio-content h-100">
+                <img src="assets/img/portfolio/fasir.png" class="img-fluid" alt="">
+                <div class="portfolio-info">
+                  <h4>FASIR Empowerment Initiative  </h4>
+                  <!-- <p>des</p> -->
+                  
+                  <a href="assets/img/portfolio/fasir.png" title="<h4>FASIR Empowerment Initiative</h4>
+                                                                  <p><b>Project: </b>Interactive Dashboard for Donation & Expense Tracking</p>
+                                                                  <p><b>Description: </b>Developed an interactive dashboard to monitor donations and provide transparency in fund allocation and spending for the NGO. This helped improve financial accountability and decision-making.</p> 
+                                                                  <p><b>Tools: </b>Google Sheet & Looker Studio</p>" 
+                    data-gallery="portfolio-gallery-app" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                  <a href="https://lookerstudio.google.com/reporting/a9b4dbf4-0f01-4ea8-bda7-6542e4ffc182" title="More Details" class="details-link" target="_blank"><i class="bi bi-link-45deg"></i></a>
+                </div>
+              </div>
+            </div><!-- End Portfolio Item -->
+            
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-python">
+              <div class="portfolio-content h-100">
+                <img src="assets/img/portfolio/whatsapp.png" class="img-fluid" alt="">
+                <div class="portfolio-info">
+                  <h4>WhatsApp Group Chat Analysis</h4>
+                  <!-- <p>des</p> -->
+                  
+                  <a href="assets/img/portfolio/whatsapp.png" title="<h4>FASIR Empowerment Initiative</h4>
+                                                                      <p><b>Project: </b>Uncovering Patterns in Group Messaging Behavior</p>
+                                                                      <p><b>Description: </b>Analyzed exported WhatsApp group chat data using Python to extract insights on message frequency, most active participants, word usage, and chat trends over time. A fun and insightful project into digital communication habits.</p> 
+                                                                      <p><b>Tools: </b>Python</p>" 
+                    data-gallery="portfolio-gallery-app" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                  <a href="https://tiamiyu.medium.com/whatsapp-group-chat-analysis-2d93e3ea32a3" title="More Details" class="details-link" target="_blank"><i class="bi bi-link-45deg"></i></a>
+                </div>
+              </div>
+            </div><!-- End Portfolio Item -->
+
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-python filter-ml">
+              <div class="portfolio-content h-100">
+                <img src="assets/img/portfolio/prostruc.png" class="img-fluid" alt="">
+                <div class="portfolio-info">
+                  <h4>Prostruc <> Python library</h4>
+                  <!-- <p>des</p> -->
+                  <a href="assets/img/portfolio/prostruc.png" title="<h4>Prostruc</h4> <p>A Comprehensive Command-line Tool for Protein Structure Prediction and Validation</p>" data-gallery="portfolio-gallery-product" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                  <a href="https://github.com/omicscodeathon/prostruct" title="More Details" class="details-link" target="_blank"><i class="bi bi-link-45deg"></i></a>
+                </div>
+              </div>
+            </div><!-- End Portfolio Item -->
+            
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-python filter-ml">
+              <div class="portfolio-content h-100">
+                <img src="assets/img/portfolio/dementia.png" class="img-fluid" alt="">
+                <div class="portfolio-info">
+                  <h4>Dementia Classification & Prediction</h4>
+                  <!-- <p>des</p> -->
+                  <a href="assets/img/portfolio/dementia.png" title="<h4>Dementia Classification & Prediction</h4>
+                                                                    <p><b>Project: </b>Machine Learning for Early Dementia Detection</p>
+                                                                    <p><b>Description: </b>Developed a predictive algorithm to assess the likelihood and type of dementia in individuals. Key aspects include data preprocessing, feature engineering, ML, model evaluation & optimization.</p>
+                                                                    <p><b>Tools: </b>Python, Git & GitHub </p>" 
+                  data-gallery="portfolio-gallery-product" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                  <a href="https://github.com/Tiamiyu1/HDSC-Premiere-Project-Team_PCA-" title="More Details" class="details-link" target="_blank"><i class="bi bi-link-45deg"></i></a>
+                </div>
+              </div>
+            </div><!-- End Portfolio Item -->
+
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-bi filter-sql">
+              <div class="portfolio-content h-100">
+                <img src="assets/img/portfolio/bi.png" class="img-fluid" alt="">
+                <div class="portfolio-info">
+                  <h4>Sales Trend Analysis with Power BI</h4>
+                  <!-- <p>des</p> -->
+                  <a href="assets/img/portfolio/bi.png" title="<h4>Communicating Analysis Results with Power BI</h4>
+                                                                <p><b>Project: </b>Sales Performance & Trends Analysis</p>
+                                                                <p><b>Description: </b>Developed interactive Power BI dashboards to effectively communicate key business metrics, including KPIs,Trends & Analysis  to enhance decision-making and uncover actionable insights.</p> 
+                                                                <p><b>Tools: </b>Power BI, SQL & Bigquery</p>" 
+                  data-gallery="portfolio-gallery-branding" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                  <a href="https://app.powerbi.com/view?r=eyJrIjoiZWRkZDFlNWEtNDA3YS00NDY5LTgzOWUtYzg1MDM4ZjRhOGMwIiwidCI6IjM5NjI2MTU3LWEwNDctNDY4OS04N2EyLTZmYTY0NWNiNWNiNyIsImMiOjh9" title="More Details" class="details-link" target="_blank"><i class="bi bi-link-45deg"></i></a>
+                </div>
+              </div>
+            </div><!-- End Portfolio Item -->
+
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-sheet filter-bi">
+              <div class="portfolio-content h-100">
+                <img src="assets/img/portfolio/excel.png" class="img-fluid" alt="">
+                <div class="portfolio-info">
+                  <h4>Excel Dashboard</h4>
+                  <!-- <p>des</p> -->
+                  <a href="assets/img/portfolio/excel.png" title="<h4>Utilizing Spreadsheets for Data Analytics</h4>
+                                                                  <p><b>Project: </b>AdventureWorks Analytics</p>
+                                                                  <p><b>Description: </b>Analyzed AdventureWorks sales data using spreadsheets to uncover key insights, including monthly sales trends, online vs. offline sales performance, delivery efficiency, top sales personnel (by volume and revenue), leading sales regions, and key reasons for successful sales.</p> 
+                                                                  <p><b>Tools: </b>Google Sheet</p>" 
+                  data-gallery="portfolio-gallery-branding" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                  <a href="https://docs.google.com/spreadsheets/d/10jLJN46eoUAJwbFn6QjXp52Ybb3Ik1dB0tgU0UuUKGM/edit?gid=1164027072#gid=1164027072" title="More Details" class="details-link" target="_blank"><i class="bi bi-link-45deg"></i></a>
+                </div>
+              </div>
+            </div><!-- End Portfolio Item -->
+
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-app filter-sql">
+              <div class="portfolio-content h-100">
+                <img src="assets/img/portfolio/churn.png" class="img-fluid" alt="">
+                <div class="portfolio-info">
+                  <h4>Retention, Cohort & Churn Analysis</h4>
+                  <!-- <p>des</p> -->
+                  <a href="assets/img/portfolio/churn.png" title="<h4>Retention, Cohort & Churn Analysis</h4>
+                                                                  <p><b>Project: </b>Understanding user behavior, retention patterns and drop-off points</p>
+                                                                  <p><b>Description: </b>Conducted in-depth analysis to understand user behavior, retention patterns, and churn.</p> 
+                                                                  <p><b>Tools: </b>SQL, Bigquery, Google Sheet & Power BI</p>" 
+                    data-gallery="portfolio-gallery-branding" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                  <a href="https://app.powerbi.com/view?r=eyJrIjoiYzNkZDE4MmMtZjUzNC00ZDU5LTkwMmYtNjY4MDI0MmQ2ODJmIiwidCI6IjM5NjI2MTU3LWEwNDctNDY4OS04N2EyLTZmYTY0NWNiNWNiNyIsImMiOjh9" title="More Details" class="details-link" target="_blank"><i class="bi bi-link-45deg"></i></a>
+                </div>
+              </div>
+            </div><!-- End Portfolio Item -->
+
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-python">
+              <div class="portfolio-content h-100">
+                <img src="assets/img/portfolio/bike.png" class="img-fluid" alt="">
+                <div class="portfolio-info">
+                  <h4>Ford GoBike System Data Exploration</h4>
+                  <!-- <p>des</p> -->
+                  <a href="assets/img/portfolio/bike.png" title="<h4>Ford GoBike System Data Exploration</h4> 
+                                                                    <p><b>Project: </b>Exploring Urban Bike-Sharing Usage Patterns</p>
+                                                                    <p><b>Description: </b>Conducted an exploratory data analysis on the Ford GoBike system using Python. Uncovered trends in trip duration, user demographics, and peak ride times to understand how people use bike-sharing services in urban areas.</p> 
+                                                                    <p><b>Tools: </b>Python</p>"  
+                      data-gallery="portfolio-gallery-book" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                  <a href="https://medium.datadriveninvestor.com/ford-gobike-system-data-exploration-fb5b229d4106" title="More Details" class="details-link" target="_blank"><i class="bi bi-link-45deg"></i></a>
+                </div>
+              </div>
+            </div><!-- End Portfolio Item -->
+
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-python filter-web">
+              <div class="portfolio-content h-100">
+                <img src="assets/img/portfolio/bike2.png" class="img-fluid" alt="">
+                <div class="portfolio-info">
+                  <h4>US Bikeshare Exploration</h4>
+                  <!-- <p>des</p> -->
+                  <a href="assets/img/portfolio/bike2.png" title="<h4>US Bikeshare Exploration</h4> 
+                                                                  <p><b>Project: </b>Interactive Command-Line Tool (deployed) for Bikeshare Insights</p>
+                                                                  <p><b>Description: </b>Built a Python-based CLI application to analyze bikeshare data across US cities. Users can filter data and explore statistics like trip duration, popular stations, and user types in an interactive and intuitive way.</p> 
+                                                                  <p><b>Tools: </b>Python</p>"  
+                      data-gallery="portfolio-gallery-book" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                  <a href="https://explorebikeshare.streamlit.app/" title="More Details" class="details-link" target="_blank"><i class="bi bi-link-45deg"></i></a>
+                </div>
+              </div>
+            </div><!-- End Portfolio Item -->
+
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-bi filter-sql filter-sheet">
+              <div class="portfolio-content h-100">
+                <img src="assets/img/portfolio/funnel.png" class="img-fluid" alt="">
+                <div class="portfolio-info">
+                  <h4>Funnel Analysis on E-commerce User Journey</h4>
+                  <!-- <p>des</p> -->
+                  <a href="assets/img/portfolio/funnel.png" title="<h4>Funnel Analysis on E-commerce User Journey</h4>
+                                                                  <p><b>Project: </b>Tracking Conversion Funnel from First Visit to Purchase</p>
+                                                                  <p><b>Description: </b> Analyzed user behavior across key funnel stages; first_visit, user_engagement, view_item, add_to_cart, and purchase. Used SQL and Python to calculate drop-off rates and conversion metrics, revealing insights to optimize the customer journey</p> 
+                                                                  <p><b>Tools: </b>SQL, Bigquery, Google Sheet & Power BI</p>" 
+                    data-gallery="portfolio-gallery-branding" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                  <a href="https://docs.google.com/spreadsheets/d/1FG103uQZfSxQZHhN3V-Twj4B0uMst_lEpL4TwCp03gg/edit?usp=sharing" title="More Details" class="details-link" target="_blank"><i class="bi bi-link-45deg"></i></a>
+                </div>
+              </div>
+            </div><!-- End Portfolio Item -->
+            
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-sql">
+              <div class="portfolio-content h-100">
+                <img src="assets/img/portfolio/sql.png" class="img-fluid" alt="">
+                <div class="portfolio-info">
+                  <h4>Advanced SQL & Database Analytics</h4>
+                  <!-- <p>des</p> -->
+                  <a href="assets/img/portfolio/sql.png" title="<h4>Utilizing Spreadsheets for Data Analytics</h4>
+                                                                  <p><b>Project: </b>Business Insights through Complex SQL Queries & Window Functions</p>
+                                                                  <p><b>Description: </b>Designed and executed advanced SQL queries to extract meaningful insights from a business database. Used joins, window functions, and filtering techniques to answer key business questions.</p> 
+                                                                  <p><b>Tools: </b>SQL, Bigquery & Google Sheet</p>" 
+                    data-gallery="portfolio-gallery-branding" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                  <a href="https://docs.google.com/spreadsheets/d/1_GdNaHTahvwSceliX_rMfL74eH95nBnQEv7XOdOLfGc/edit?usp=sharing" title="More Details" class="details-link" target="_blank"><i class="bi bi-link-45deg"></i></a>
+                </div>
+              </div>
+            </div><!-- End Portfolio Item -->
+
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-bi filter-python filter-sheet">
+              <div class="portfolio-content h-100">
+                <img src="assets/img/portfolio/twitter.png" class="img-fluid" alt="">
+                <div class="portfolio-info">
+                  <h4>Twitter Sentiment Analytics Dashboard</h4>
+                  <!-- <p>des</p> -->
+                  <a href="assets/img/portfolio/twitter.png" title="<h4>Twitter Sentiment Analytics Dashboard</h4> 
+                                                                      <p><b>Project: </b>Monitoring Public Opinion on Products and Brands</p>
+                                                                      <p><b>Description: </b>Scraped tweets using Python, performed sentiment analysis to classify them as positive, negative, or neutral, and built a dashboard in Looker Studio. The tool tracks social media sentiment trends for brand monitoring.</p> 
+                                                                      <p><b>Tools: </b>Python, Google Sheet & Looker Studio</p>"  
+                      data-gallery="portfolio-gallery-book" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                  <a href="https://lookerstudio.google.com/reporting/6ab905a8-16d4-4375-93de-4b048f0585df" title="More Details" class="details-link" target="_blank"><i class="bi bi-link-45deg"></i></a>
+                </div>
+              </div>
+            </div><!-- End Portfolio Item -->
+            
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-bi filter-sheet filter-ml">
+              <div class="portfolio-content h-100">
+                <img src="assets/img/portfolio/diamond.png" class="img-fluid" alt="">
+                <div class="portfolio-info">
+                  <h4>Diamond Bidding Prediction</h4>
+                  <!-- <p>des</p> -->
+                  <a href="assets/img/portfolio/diamond.png" title="<h4>Diamond Bidding Prediction</h4> 
+                                                                    <p><b>Project: </b>Predictive Modeling for Diamond Price Estimation</p>
+                                                                    <p><b>Description: </b>Developed a predictive model using machine learning to estimate diamond prices. The model guided a jewelry company in making informed bidding decisions for a bulk diamond purchase.</p> 
+                                                                    <p><b>Tools: </b>Excel - Linear Regression</p>"  
+                      data-gallery="portfolio-gallery-book" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                  <a href="https://medium.datadriveninvestor.com/making-important-business-decisions-with-machine-learning-a-practical-approach-part-1-cadaa2f80059#4adb" title="More Details" class="details-link" target="_blank"><i class="bi bi-link-45deg"></i></a>
+                </div>
+              </div>
+            </div><!-- End Portfolio Item -->
+            
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-web filter-python filter-ml">
+              <div class="portfolio-content h-100">
+                <img src="assets/img/portfolio/prostruc2.png" class="img-fluid" alt="">
+                <div class="portfolio-info">
+                  <h4>Prostruc <> Web-Based Tool</h4>
+                  <!-- <p>des</p> -->
+                  <a href="assets/img/portfolio/prostruc2.png" title="<h4>Prostruc</h4> <p>A Web-Based Tool for Protein Structure Prediction and Validation" data-gallery="portfolio-gallery-book" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                  <a href="http://149.165.154.75:8501/" title="More Details" class="details-link" target="_blank"><i class="bi bi-link-45deg"></i></a>
+                </div>
+              </div>
+            </div><!-- End Portfolio Item -->
+
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-bi filter-sqlfilter-sheet">
+              <div class="portfolio-content h-100">
+                <img src="assets/img/portfolio/clv.png" class="img-fluid" alt="">
+                <div class="portfolio-info">
+                  <h4>Customer Lifetime Value (CLV) Analysis</h4>
+                  <!-- <p>des</p> -->
+                  <a href="assets/img/portfolio/clv.png" title="<h4>Customer Lifetime Value (CLV) Analysis</h4>
+                                                                <p><b>Project: </b>Predictive Modeling for Customer Lifetime Value</p>
+                                                                <p><b>Description: </b>Developed a predictive model to estimate Customer Lifetime Value (CLV) based on historical purchase data. The model helped a retail company identify high-value customers and optimize marketing efforts, improving customer retention strategies and ROI.</p> 
+                                                                <p><b>Tools: </b>SQL, Bigquery, Google Sheet & Power BI</p>" 
+                    data-gallery="portfolio-gallery-branding" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                  <a href="https://docs.google.com/spreadsheets/d/1EN_HCiLGBWP6NISMvxoNgPYquXtee0WVyzsBwYStw4w/edit?usp=sharing" title="More Details" class="details-link" target="_blank"><i class="bi bi-link-45deg"></i></a>
+                </div>
+              </div>
+            </div><!-- End Portfolio Item -->
+
+          </div><!-- End Portfolio Container -->
+
+        </div>
+
+      </div>
+
+    </section><!-- /Portfolio Section -->
+
+    
+
+
+
+  </section><!-- /Portfolio Section -->
+
+  <!-- Blog Section -->
+  <section id="blog" class="blog section">
+  
+    <div class="container section-title" data-aos="fade-up">
+      <h2>Blog</h2>
+      <p>Insights, tutorials, and stories from my journey in data science and tech.</p>
+    </div>
+  
+    <div class="container">
+      <div class="row gy-4" data-aos="fade-up" data-aos-delay="100">
+        
+        <!-- Blog Post 1 -->
+        <div class="col-lg-4 col-md-6">
+          <div class="blog-post">
+            <h5><a href="https://medium.datadriveninvestor.com/10-data-visualization-designs-you-need-to-know-about-de1da34332f4" target="_blank">10 Data Visualization Designs You Need to Know About</a></h5>
+            <p class="small">Mastering Data Visualization Design: Unveiling the Art of Formatting, Labelling Strategies, and Beyond.</p>
+          </div>
+        </div>
+  
+        <!-- Blog Post 2 -->
+        <div class="col-lg-4 col-md-6">
+          <div class="blog-post">
+            <h5><a href="https://medium.datadriveninvestor.com/data-visualization-how-to-choose-the-right-plots-bacc6df7f309" target="_blank">Data Visualization: How to Choose the Right Plots with Plot Interpretation</a></h5>
+            <p class="small">Understanding Data Types and Charts Interpretation.</p>
+          </div>
+        </div>
+  
+        <!-- Blog Post 3 -->
+        <div class="col-lg-4 col-md-6">
+          <div class="blog-post">
+            <h5><a href="https://tiamiyu.medium.com/25-jupyter-notebook-hacks-to-boost-your-productivity-3d0530340cf2" target="_blank">25 Jupyter Notebook Hacks and Shortcuts to Boost Your Productivity</a></h5>
+            <p class="small">Here, we will be discussing some hacks and shortcuts to maximize productivity while using the jupyter notebook (on Windows).</p>
+          </div>
+        </div>
+  
+        <!-- Blog Post 4 -->
+        <div class="col-lg-4 col-md-6">
+          <div class="blog-post">
+            <h5><a href="https://medium.datadriveninvestor.com/simplistic-approach-to-machine-learning-modeling-in-data-science-part-1-f2a97987d0f0" target="_blank">A Simplistic Approach to Machine Learning Modeling in Data Science</a></h5>
+            <p class="small">This project follows a simple and easy-to-follow approach to ML modeling in data science from reading in a csv file, data cleaning, EDA, visualization to simple linear regression and multiple linear regression.</p>
+          </div>
+        </div>
+  
+        <!-- Blog Post 5 -->
+        <div class="col-lg-4 col-md-6">
+          <div class="blog-post">
+            <h5><a href="https://tiamiyu.medium.com/whatsapp-group-chat-analysis-2d93e3ea32a3" target="_blank">WhatsApp Group Chat Analysis</a></h5>
+            <p class="small">Deriving insights from WhatsApp chat using Python.</p>
+          </div>
+        </div>
+  
+      </div>
+  
+      <div class="text-center mt-4" data-aos="fade-up" data-aos-delay="200">
+        <a href="https://tiamiyu.medium.com/" class="btn btn-primary" target="_blank">View All Posts</a>
+      </div>
+    </div>
+  
+  </section><!-- /Blog Section -->
+
+
+  </section><!-- /Contact Section -->
+
+  <!-- Contact Section -->
+  <section id="contact" class="contact section">
+  
+    <div class="container section-title" data-aos="fade-up">
+      <h2>Get In Touch</h2>
+      <p>If you'd like to collaborate, have questions, or just want to chat, feel free to reach out!</p>
+    </div>
+  
+    <div class="container">
+      <div class="row">
+        
+        <!-- Contact Information -->
+        <div class="col-md-6">
+          <div class="contact-info">
+            <div class="info-item d-flex" data-aos="fade-up" data-aos-delay="100">
+              <i class="bi bi-envelope flex-shrink-0"></i>
+              <div>
+                <h3>Email</h3>
+                <p><a href="mailto:Abdulwasiu.Tiamiyu@um6p.ma">Abdulwasiu.Tiamiyu@um6p.ma</a></p>
+              </div>
+            </div>
+  
+            <div class="info-item d-flex" data-aos="fade-up" data-aos-delay="200">
+              <i class="bi bi-linkedin flex-shrink-0"></i>
+              <div>
+                <h3>LinkedIn</h3>
+                <p><a href="https://www.linkedin.com/in/tiamiyu1" target="_blank">Visit my LinkedIn</a></p>
+              </div>
+            </div>
+  
+            <div class="info-item d-flex" data-aos="fade-up" data-aos-delay="300">
+              <i class="bi bi-github flex-shrink-0"></i>
+              <div>
+                <h3>GitHub</h3>
+                <p><a href="https://github.com/tiamiyu1" target="_blank">Check out my projects on GitHub</a></p>
+              </div>
+            </div>
+  
+            <div class="info-item d-flex" data-aos="fade-up" data-aos-delay="400">
+              <i class="bi bi-twitter flex-shrink-0"></i>
+              <div>
+                <h3>Twitter</h3>
+                <p><a href="https://twitter.com/tawowas" target="_blank">Follow me on Twitter</a></p>
+              </div>
+            </div>
+          </div>
+        </div>
+  
+        <!-- Contact Form -->
+        <div class="col-md-6">
+          <div class="contact-form">
+            <form action="your-form-handler.php" method="POST" data-aos="fade-up" data-aos-delay="500">
+              <div class="mb-3">
+                <label for="name" class="form-label">Your Name</label>
+                <input type="text" class="form-control" id="name" name="name" required>
+              </div>
+              <div class="mb-3">
+                <label for="email" class="form-label">Your Email</label>
+                <input type="email" class="form-control" id="email" name="email" required>
+              </div>
+              <div class="mb-3">
+                <label for="message" class="form-label">Your Message</label>
+                <textarea class="form-control" id="message" name="message" rows="5" required></textarea>
+              </div>
+              <button type="submit" class="btn btn-primary">Send Message</button>
+            </form>
+          </div>
+        </div>
+  
+      </div>
+    </div>
+  
+  </section><!-- /Contact Section -->
+  
+
   </main>
+
+  
+
+  <!-- Scroll Top -->
+  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Preloader -->
+  <div id="preloader"></div>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/typed.js/typed.umd.js"></script>
+  <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+  <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+
+  <!-- Main JS File -->
+  <script src="assets/js/main.js"></script>
+
 </body>
+
 </html>
