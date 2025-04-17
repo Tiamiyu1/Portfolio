@@ -1262,3 +1262,32 @@ section,
 .starter-section {
   /* Add your styles here */
 }
+
+
+/*--------------------------------------------------------------    
+# Additional Portfolio Section
+--------------------------------------------------------------*/
+/* Always show the portfolio title */
+.portfolio .portfolio-content .portfolio-info {
+  opacity: 1;
+}
+
+.portfolio .portfolio-content .portfolio-info h4 {
+  opacity: 1;
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  z-index: 4;
+}
+
+/* Hide the icons by default */
+.portfolio .portfolio-content .portfolio-info .preview-link,
+.portfolio .portfolio-content .portfolio-info .details-link {
+  opacity: 0;
+}
+
+/* Show icons on hover */
+.portfolio .portfolio-content:hover .portfolio-info .preview-link,
+.portfolio .portfolio-content:hover .portfolio-info .details-link {
+  opacity: 1;
+}
